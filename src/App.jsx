@@ -23,14 +23,14 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-screen text-white text-center p-4 w-full">
-        <div className="flex items-center space-x-4 justify-center flex-col gap-8 bg-glass p-4 border-2 border-white rounded-lg w-full max-w-lg ">
-          <div className="flex justify-center items-center text bg-center">
+      <div className="flex flex-col items-center justify-center h-screen text-white text-center p-4  w-full">
+        <div className="flex flex-col p-4 py-8 gap-4 bg-glass border-2 border-white rounded-lg w-full max-w-lg">
+          <div className="flex justify-center items-center text-center bg-center">
             <h1 className="text-4xl font-bold pb-8">UUID Generator</h1>
           </div>
 
-          <div className="flex items-center space-x-2 border-2 border-white p-2 rounded-md">
-            <span className="text-xl">{uuid}</span>
+          <div className="text-xl flex items-center justify-center border-2 border-white bg-orange-700 bg-opacity-20 p-2 rounded-lg w-full">
+            {uuid}
           </div>
 
           <div className="flex justify-center items-center gap-4 text-sm">
@@ -46,6 +46,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <Toaster />
     </>
   );
